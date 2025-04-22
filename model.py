@@ -18,5 +18,4 @@ model.fit(X, y)
 print("Model coefficients:", model.coef_)
 print("Model intercept:", model.intercept_)
 
-# Save model
 joblib.dump(model, "house_model.pkl")
