@@ -1,10 +1,8 @@
 import pandas as pd
 import joblib
 
-# Load saved model
 model = joblib.load("house_model.pkl")
 
-# Predict new data
 new_house_df = pd.DataFrame([[2200, 3]], columns=["Size", "Bedrooms"])
 predicted_price = model.predict(new_house_df)
 
